@@ -1,0 +1,25 @@
+{
+  "project_code": "library-server",
+  "server_command": "uv run server.py",
+  "transport": "stdio",
+  "service_url": "http://localhost:8080",
+  "cluster_url": "http://mcp-probe-service:8080",
+  "test_env": {
+    "EXAMPLE_ENV_VAR": "hello_world"
+  },
+  "test_data": {
+    "available_books": [
+      {"book_id": "B001", "title": "The Great Gatsby", "genre": "Classic"},
+      {"book_id": "B002", "title": "Dune", "genre": "Science Fiction"},
+      {"book_id": "B004", "title": "Pride and Prejudice", "genre": "Romance"}
+    ],
+    "checked_out_books": [
+      {"book_id": "B003", "title": "Murder on the Orient Express", "genre": "Mystery"}
+    ],
+    "invalid_book_ids": ["B999", "INVALID", ""],
+    "valid_user_names": ["Alice", "Bob"],
+    "valid_genres": ["Classic", "Science Fiction", "Mystery", "Romance"],
+    "invalid_genres": ["Cooking", "xyz_nonexistent"],
+    "catalog_resource_uri": "library://catalog/inventory"
+  }
+}
