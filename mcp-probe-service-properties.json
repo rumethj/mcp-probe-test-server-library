@@ -2,8 +2,7 @@
   "project_code": "library-server",
   "server_command": "uv run server.py",
   "transport": "stdio",
-  "service_url": "http://localhost:8080",
-  "cluster_url": "http://mcp-probe-service:8080",
+  "service_url": "http://mcp-probe-service:8080",
   "test_env": {
     "EXAMPLE_ENV_VAR": "hello_world"
   },
